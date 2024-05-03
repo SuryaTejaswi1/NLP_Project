@@ -32,12 +32,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 30,
-   "id": "1f48069e",
-   "metadata": {},
-   "outputs": [],
-   "source": [
     "def clean_text(text):\n",
     "    # Download necessary NLTK resources if not already available\n",
     "    nltk.download('punkt')  # Download tokenizer\n",
@@ -141,11 +135,7 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 31,
-   "id": "6ef63205",
-   "metadata": {},
-   "outputs": [],
+
    "source": [
     "def chunk_data(text):\n",
     "    char_text_splitter = CharacterTextSplitter(separator=\"\\n\", chunk_size=4000,\n",
@@ -157,11 +147,6 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 32,
-   "id": "64d9a8f8",
-   "metadata": {},
-   "outputs": [],
    "source": [
     "# User input\n",
     "user_input = st.text_input(\"Enter the patient clinical text here:\", \"\")\n",
@@ -182,73 +167,7 @@
     "    else:\n",
     "        st.warning(\"Please enter some text to classify.\")\n"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d7e98bf1",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 2,
-   "id": "ce8e6657",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "3c0a9a0e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "7ea8c451",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "322b9d0c",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "b80e1e50",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "00ee3e9e",
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "from langchain.chat_models import ChatOpenAI\n",
-    "from langchain.schema import(\n",
-    "    AIMessage,\n",
-    "    HumanMessage,\n",
-    "    SystemMessage\n",
-    ")"
-   ]
-  }
- ],
+    },
  "metadata": {
   "kernelspec": {
    "display_name": "Python 3 (ipykernel)",
