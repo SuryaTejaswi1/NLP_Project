@@ -32,6 +32,7 @@
    ]
   },
   {
+   "source": [
     "def clean_text(text):\n",
     "    # Download necessary NLTK resources if not already available\n",
     "    nltk.download('punkt')  # Download tokenizer\n",
@@ -135,7 +136,6 @@
    ]
   },
   {
-
    "source": [
     "def chunk_data(text):\n",
     "    char_text_splitter = CharacterTextSplitter(separator=\"\\n\", chunk_size=4000,\n",
