@@ -29,6 +29,7 @@
     "\n",
     "# pre-trained classifier model\n",
     "classifier = joblib.load('SVM.pkl')"
+    }
    ]
   },
   {
